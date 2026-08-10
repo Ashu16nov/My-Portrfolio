@@ -1,0 +1,44 @@
+.glass-nav {
+  background: rgba(11, 15, 25, 0.4) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.glass-nav.scrolled {
+  background: rgba(11, 15, 25, 0.9) !important;
+  padding: 10px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 2.5rem !important;
+  color: var(--text-color) !important;
+  font-weight: 700 !important;
+  font-family: 'Outfit', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.7rem;
+  color: var(--text-color) !important;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--main-color) !important;
+  text-shadow: 0 0 10px var(--main-color);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
