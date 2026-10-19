@@ -11,6 +11,7 @@ const Skills = () => {
   ];
 
   const profSkills = [
+    { name: 'Full Stack Development', percent: 90 },
     { name: 'Web Development', percent: 90 },
     { name: 'UI/UX Design', percent: 85 },
     { name: 'Data Structures', percent: 75 },

@@ -6,16 +6,16 @@ const About = () => {
     <section id="about" className="about-section pt-5">
       <Container>
         <Row className="align-items-center">
-          <Col md={5} className="mb-4 mb-md-0">
+          <Col lg={5} md={12} className="mb-4 mb-lg-0 d-flex justify-content-center">
             <div className="hero-img-box">
               <div className="hero-img-item">
-                <img src="/profile.png" alt="Aashutosh" />
+                <img src="/about.jpg" alt="Aashutosh" style={{ objectPosition: 'center 15%' }} />
               </div>
             </div>
           </Col>
-          <Col md={7}>
+          <Col lg={7} md={12}>
             <h2 className="heading text-start mb-3">About <span>Me</span></h2>
-            <h3 className="mb-4" style={{fontSize: '2.6rem', fontWeight: 600}}>Frontend Developer | UI/UX Designer</h3>
+            <h3 className="mb-4" style={{fontSize: '2.6rem', fontWeight: 600}}>Full Stack Developer | UI/UX Designer</h3>
             <p style={{fontSize: '1.6rem', color: '#94a3b8', lineHeight: 1.6, marginBottom: '3rem'}}>
               Motivated MCA professional with strong knowledge of Full-Stack Development, Data Structures, DBMS. 
               Proficient in Python, SQL, HTML, CSS, and JavaScript with hands-on experience in academic and web 

@@ -5,9 +5,9 @@ import { FaCode, FaPaintBrush, FaBriefcase } from 'react-icons/fa';
 const Services = () => {
   const services = [
     {
-      title: 'Frontend Developer',
+      title: 'Full Stack Developer',
       icon: <FaCode size={50} color="var(--main-color)" className="mb-4" />,
-      desc: 'I am a frontend developer focused on building responsive, high-performance, and user friendly web applications using modern web technologies.'
+      desc: 'Architecting and developing robust, end-to-end web applications with modern frontend frameworks (React), scalable backend APIs (Node.js, Express, Python), and database management.'
     },
     {
       title: 'UI/UX Design',

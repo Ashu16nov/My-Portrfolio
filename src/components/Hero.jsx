@@ -8,7 +8,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <Container>
         <Row className="align-items-center">
-          <Col md={7} className="hero-content">
+          <Col lg={6} md={12} className="hero-content mb-5 mb-lg-0">
             <h3>Hello It's Me</h3>
             <h1>Aashutosh</h1>
             <h3>
@@ -16,6 +16,8 @@ const Hero = () => {
               <span className="text-main">
                 <TypeAnimation
                   sequence={[
+                    'Full Stack Developer',
+                    2000,
                     'Frontend Developer',
                     2000,
                     'UI/UX Designer',
@@ -41,12 +43,12 @@ const Hero = () => {
               <a href="#!"><FaFacebookF /></a>
               <a href="#!"><FaDribbble /></a>
               <a href="#!"><FaLinkedinIn /></a>
-              <a href="#!"><FaGithub /></a>
+              <a href="https://github.com/Ashu16nov" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             </div>
             
             <a href="#!" className="btn-custom">Download Resume</a>
           </Col>
-          <Col md={5}>
+          <Col lg={6} md={12} className="d-flex justify-content-center">
             <div className="hero-img-box">
               <div className="hero-img-item">
                 <img src="/profile.png" alt="Aashutosh" />

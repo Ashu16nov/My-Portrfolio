@@ -115,14 +115,20 @@ section {
 .hero-img-box {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  padding: .5rem;
+  padding: .6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  filter: drop-shadow(0 0 25px rgba(0, 243, 255, 0.25));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+.hero-img-box:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 35px rgba(0, 243, 255, 0.45));
 }
 .hero-img-box::before, .hero-img-box::after {
   content: '';
@@ -160,5 +166,5 @@ section {
   section { padding: 10rem 3% 2rem; }
 }
 @media (max-width: 768px) {
-  .hero-img-box { width: 60vw; height: 60vw; margin-top: 4rem; }
+  .hero-img-box { width: 75vw; height: 75vw; max-width: 360px; margin-top: 3rem; }
 }

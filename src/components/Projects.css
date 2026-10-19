@@ -1,18 +1,28 @@
 .project-card {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 243, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   display: flex;
+  background: var(--second-bg-color);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  border-color: var(--main-color);
+  box-shadow: 0 0 25px rgba(0, 243, 255, 0.25);
 }
 
 .project-card img {
   width: 100%;
-  transition: .5s ease;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .project-card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .project-overlay {
@@ -21,15 +31,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(180deg, rgba(11, 15, 25, 0.88) 0%, rgba(11, 15, 25, 0.96) 60%, rgba(0, 243, 255, 0.92) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 4rem;
+  padding: 2rem 3rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: transform 0.45s ease;
 }
 
 .project-card:hover .project-overlay {
@@ -37,30 +47,58 @@
 }
 
 .project-overlay h4 {
-  font-size: 3rem;
-  color: var(--bg-color);
+  font-size: 2.2rem;
+  color: #ffffff;
   font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.project-tag {
+  font-size: 1.2rem;
+  color: var(--main-color);
+  background: rgba(0, 243, 255, 0.12);
+  border: 1px solid rgba(0, 243, 255, 0.35);
+  padding: 0.3rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+  letter-spacing: 0.05rem;
 }
 
 .project-overlay p {
-  font-size: 1.6rem;
-  margin: .5rem 0 2rem;
-  color: var(--bg-color);
-  font-weight: 500;
+  font-size: 1.35rem;
+  color: #cbd5e1;
+  margin: 0 0 1.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.project-links {
+  display: flex;
+  gap: 1.2rem;
 }
 
 .project-overlay a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text-color);
+  width: 4.8rem;
+  height: 4.8rem;
+  background: var(--main-color);
   border-radius: 50%;
   text-decoration: none;
+  box-shadow: 0 0 1.2rem var(--main-color);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-overlay a:hover {
+  transform: scale(1.15);
+  background: #ffffff;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.8);
 }
 
 .project-overlay a svg {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--bg-color);
 }
