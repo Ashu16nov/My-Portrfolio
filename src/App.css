@@ -168,3 +168,15 @@ section {
 @media (max-width: 768px) {
   .hero-img-box { width: 75vw; height: 75vw; max-width: 360px; margin-top: 3rem; }
 }
+
+/* Resume Modal */
+.resume-modal .modal-content {
+  background: var(--second-bg-color);
+  border: 1px solid rgba(0, 243, 255, 0.3) !important;
+  box-shadow: 0 0 35px rgba(0, 243, 255, 0.25) !important;
+  border-radius: 1.5rem !important;
+  overflow: hidden;
+}
+.resume-modal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
