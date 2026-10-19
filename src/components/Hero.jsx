@@ -46,7 +46,15 @@ const Hero = () => {
               <a href="https://github.com/Ashu16nov" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             </div>
             
-            <a href="#!" className="btn-custom">Download Resume</a>
+            <a 
+              href="/Aashutosh_Resume.pdf" 
+              download="Aashutosh_Resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-custom"
+            >
+              Download Resume
+            </a>
           </Col>
           <Col lg={6} md={12} className="d-flex justify-content-center">
             <div className="hero-img-box">
