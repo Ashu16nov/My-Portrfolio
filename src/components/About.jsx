@@ -9,7 +9,7 @@ const About = () => {
           <Col lg={5} md={12} className="mb-4 mb-lg-0 d-flex justify-content-center">
             <div className="hero-img-box">
               <div className="hero-img-item">
-                <img src="/about.jpg" alt="Aashutosh" style={{ objectPosition: 'center 15%' }} />
+                <img src="./about.jpg" alt="Aashutosh" style={{ objectPosition: 'center 15%' }} />
               </div>
             </div>
           </Col>

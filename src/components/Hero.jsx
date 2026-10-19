@@ -60,7 +60,7 @@ const Hero = () => {
           <Col lg={6} md={12} className="d-flex justify-content-center">
             <div className="hero-img-box">
               <div className="hero-img-item">
-                <img src="/profile.png" alt="Aashutosh" />
+                <img src="./profile.png" alt="Aashutosh" />
               </div>
             </div>
           </Col>
@@ -89,7 +89,7 @@ const Hero = () => {
           </Modal.Title>
           <div className="ms-auto me-3 d-flex gap-2">
             <a 
-              href="/Aashutosh_Resume.pdf" 
+              href="./Aashutosh_Resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-custom"
@@ -105,7 +105,7 @@ const Hero = () => {
               <FaExternalLinkAlt className="me-2" /> Open PDF
             </a>
             <a 
-              href="/Aashutosh_Resume.pdf" 
+              href="./Aashutosh_Resume.pdf" 
               download="Aashutosh_Resume.pdf" 
               className="btn-custom"
               style={{ padding: '0.5rem 1.4rem', fontSize: '1.3rem' }}
@@ -124,7 +124,7 @@ const Hero = () => {
           }}
         >
           <img 
-            src="/resume-preview.png" 
+            src="./resume-preview.png" 
             alt="Aashutosh Resume" 
             className="img-fluid rounded shadow-lg"
             style={{ 
